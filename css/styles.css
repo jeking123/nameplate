@@ -3,13 +3,15 @@ YOUR STYLES
 *******************/
 
 article {
-    margin: 0 auto;
+    margin: 5% 5% 5% 5%;
     padding: 3em;
+    background-color: rgba(255,255,255,.8);
+    min-height: 95%;
 }
 
 h1 {
-    font-size: 6em;
-    text-align: center;
+    font-size: 3em;
+    text-align: right;
     text-transform: uppercase;
 }
 
@@ -17,9 +19,24 @@ h1 {
 /* First Frame */
 
 .char1,
+.char2,
+.char3,
 .char4,
-.char10 {
-    background: orange;
+.char5,
+.char6,
+.char8,
+.char9,
+.char10,
+.char11,
+.char13,
+.char14,
+.char15,
+.char16,
+.char17,
+.char18,
+.char19,
+.char20 {
+    background:;
     box-shadow: inset 0 0 8px #fff;
     display: inline-block;
     padding: .25em;
@@ -27,25 +44,28 @@ h1 {
     transition: transform .5s;
 }
 
-.char4 {
-    letter-spacing: 4px;
-}
-
-
 /* Last Frame */
 
-.char1:hover {
-    transform: rotate(-5deg) scale(.75);
+.char1:hover,
+.char2:hover,
+.char3:hover,
+.char4:hover, 
+.char5:hover,
+.char6:hover,
+.char8:hover,
+.char9:hover,
+.char10:hover,
+.char11:hover,
+.char13:hover,
+.char14:hover,
+.char15:hover,
+.char16:hover,
+.char17:hover,
+.char18:hover,
+.char19:hover,
+.char20:hover {
+    transform: rotate(-5deg) scale(1.75);
 }
-
-.char4:hover {
-    transform: rotate(15deg) scale(1.25);
-}
-
-.char10:hover {
-    transform: rotate(10deg);
-}
-
 
 /* Keyframe Animation */
 @keyframes rubberBand {
@@ -85,6 +105,10 @@ h1 {
   }
 }
 
+article img {
+    float:right;
+    margin:5%
+}
 
 article img:hover {
   animation: rubberBand 1s infinite;
