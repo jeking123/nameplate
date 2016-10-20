@@ -7,20 +7,54 @@ section {
     padding: 3em;
     background-color: rgba(255,255,255,.8);
     min-height: 95%;
+    position:relative;
 }
 
 section h1 {
     font-size: 3em;
-    text-align: right;
+    text-align: center;
     text-transform: uppercase;
 }
 section h3{
     text-transform:uppercase;
 }
+section main {
+    width:85%;
+    margin: 0 auto;
+}
 .square {
-    width: 200px;
-    height: 100px;
     border: 1pt dashed green;
+}
+main article {
+    display:inline-block;
+    padding:1px;
+    float:left;
+}
+section p {
+    font-size: 1.5em;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+section ul li {
+    display:inline;
+}
+ul li a {
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border: 1pt solid cadetblue;
+}
+ul li a:link {
+    color:steelblue;
+    text-decoration: none;
+}
+ul li a:visited {
+    color:forestgreen;
+}
+ul li a:hover {
+    text-transform: uppercase;
+    color:azure;
+    background-color:cadetblue;
 }
 
 
@@ -44,12 +78,11 @@ section h3{
 .char18,
 .char19,
 .char20 {
-    background:;
     box-shadow: inset 0 0 8px #fff;
     display: inline-block;
-    padding: .25em;
-    border-bottom: 20px solid #fff;
-    transition: transform .5s;
+    padding: .15em;
+    border-bottom: px solid #fff;
+    transition: transform .15s;
 }
 
 /* Last Frame */
@@ -72,10 +105,10 @@ section h3{
 .char18:hover,
 .char19:hover,
 .char20:hover {
-    transform: rotate(-5deg) scale(1.75) skewX(5deg);
+    transform: rotate(-4deg) scale(1.75) skewX(2deg);
 }
 
-/* Keyframe Animation */
+/* Keyframe Animation 
 @keyframes rubberBand {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -112,14 +145,49 @@ section h3{
     transform: scale3d(1, 1, 1);
   }
 }
+*/
 
-section img {
-    float:right;
+/* Tada */
+
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+section center img {
     margin:5%
 }
 
-section img:hover {
-  animation: rubberBand 1s infinite;
+section center img:hover {
+  animation: tada 1s infinite;
 }
 
 
