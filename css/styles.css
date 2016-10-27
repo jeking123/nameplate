@@ -181,31 +181,92 @@ ul li a:hover {
   -webkit-animation-name: tada;
   animation-name: tada;
 }
-
-section center img {
-    margin:5%
+section div {
+    margin:0 auto;   
+}
+body section p {
+    width:95%;
+}
+section div img {
+    width: 100%;
 }
 
-section center img:hover {
+section div img:hover {
   animation: tada 1s infinite;
 }
+
 
 
 /********************
 MEDIA QUERIES
 *******************/
 
-
 /* Desktop */
-
-@media (min-width: 1200px) {}
-
+@media screen 
+  /* 2560px = 160em */
+  and (max-width: 160em)
+  /* 1280px = 80em */
+  and (min-width: 80em) { 
+  
+  /* Temporary Styling. Add your own. 
+  body {
+       background: blue;
+  }
+  */
+      
+      
+/*  My Styles  */
+    body section div {
+        width:25%;   
+    }
+    body section p {
+        width:50%;
+    }
+      
+/*  End My Styles  */
+}
 
 /* Tablet */
-
-@media (min-width: 768px) {}
-
+@media screen 
+   /* 1279 = 79.9375em */  
+  and (max-width: 79.9375em)
+   /* 768px = 160em */
+  and (min-width: 48em)  {
+  
+  /* Temporary Styling. Add your own. 
+  body {
+       background: green;
+  }
+  */
+      
+/*  My Styles  */
+     body section div {
+        width:45%;   
+    }     
+      
+/*  End My Styles  */
+      
+}
 
 /* Mobile */
-
-@media (min-width: 480px) {}
+@media screen
+  /* 767px = 47.9375em */
+  and (max-width: 47.9375em)
+  /* 320px = 20em */
+  and (min-width: 20em) { 
+  
+  /* Temporary Styling. Add your own. 
+  body {
+       background: red;
+  }
+  */
+      
+/*  My Styles  */
+    body section div {
+        width:75%;   
+    }
+      
+/*  End My Styles  */
+      
+  
+}
